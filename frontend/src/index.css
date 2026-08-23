@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root { --canvas: #f7f7f5; --ink: #20211e; --mist: #e7e8e2; }
+  .dark { --canvas: #161714; --ink: #f6f7f2; --mist: #30322d; color-scheme: dark; }
+  * { -webkit-tap-highlight-color: transparent; }
+  body { @apply bg-canvas font-sans text-ink antialiased; }
+  button { @apply select-none; }
+}
